@@ -1,0 +1,4 @@
+type = process
+command = /usr/bin/pipewire $$ /usr/bin/pipewire-pulse && /usr/bin/wireplumber
+run-as = usernamehere
+smooth-recovery = true
