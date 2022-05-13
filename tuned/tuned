@@ -4,3 +4,8 @@ run-as          = root
 smooth-recovery = true
 logfile         = /var/log/dinit/tuned.log
 depends-on      = libvirtd
+depends-on      = virtlogd
+depends-on      = virtlockd
+waits-for       = mount-all
+waits-for       = modules
+
