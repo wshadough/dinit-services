@@ -1,4 +1,6 @@
-type = process
-command = /usr/bin/tuned
-run-as = root
+type            = process
+command         = /usr/bin/tuned
+run-as          = root
 smooth-recovery = true
+logfile         = /var/log/dinit/tuned.log
+depends-on      = libvirtd
